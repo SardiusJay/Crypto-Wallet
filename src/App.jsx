@@ -12,7 +12,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Wallet Connect</h1>
+      <h1>COIN NODE</h1>
       <div className="card">
       <p>
       Open protocol for connecting Wallets to Dapps
