@@ -29,8 +29,8 @@
 }
 
 .card-icon{
-    width: 8rem;
-    height: 8rem;
+    width: 78px;
+    height: 76px;
 }
 
 .cards{
@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 416px;
     height: 192px;
     padding: 15px 20px;
@@ -52,9 +53,17 @@
     border-left: .5rem solid var(--secondary-color);
 }
 
+.card-link-icon{
+    transform: translate(195px, -35px);
+}
+
 .distribution-details{
     display: flex;
     gap: 15rem;
+}
+
+.distribution-header{
+    color: var(--secondary-color);
 }
 
 .distribution{

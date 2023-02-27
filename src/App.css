@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,900&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +9,11 @@
 :root{
     --primary-color: rgb(26, 28, 50);
     --secondary-color: rgb(72, 128, 200);
-
+    --font-family: 'Poppins', sans-serif;
 }
+
 .App{
     background-image: linear-gradient(to bottom, rgb(7, 8, 21), rgb(13, 14, 39));
     color: white;
+    font-family: var(--font-family);
 }

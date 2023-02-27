@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
+    padding-bottom: .5rem;
 }
 
 .top-texts{
@@ -16,7 +17,7 @@
 }
 
 .footer-button{
-    background-color: #444544;
+    background-color: rgb(31,76, 170);
     border: none;
     padding: .5rem 1rem;
     border-radius: 5px;

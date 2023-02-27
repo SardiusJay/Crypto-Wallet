@@ -1,5 +1,6 @@
 import { BiCheckShield } from "react-icons/bi";
-
+import { FaRegMoneyBillAlt } from "react-icons/fa";
+import { RiSmartphoneLine } from "react-icons/ri";
 export const cardInfo = [
   {
     src: <BiCheckShield className="card-icon" />,
@@ -12,93 +13,93 @@ export const cardInfo = [
     title: "Validate",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <FaRegMoneyBillAlt className="card-icon" />,
     id: 3,
     title: "Restore",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <FaRegMoneyBillAlt className="card-icon" />,
+    id: 3,
+    title: "Staking review",
+  },
+  {
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 4,
     title: "Claim Reflection",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 5,
     title: "Claim Airdrop",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <FaRegMoneyBillAlt className="card-icon" />,
     id: 6,
-    title: "Migration",
+    title: "Airdrop",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 7,
-    title: "Migration",
+    title: "Bridge",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 8,
-    title: "Migration",
+    title: "Claim",
   },
   {
     src: <BiCheckShield className="card-icon" />,
     id: 9,
-    title: "Migration",
+    title: "Rectification",
   },
   {
     src: <BiCheckShield className="card-icon" />,
     id: 10,
-    title: "Migration",
+    title: "Recovery",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <FaRegMoneyBillAlt className="card-icon" />,
     id: 11,
-    title: "Migration",
+    title: "Harvest my stakings",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <FaRegMoneyBillAlt className="card-icon" />,
     id: 12,
-    title: "Migration",
+    title: "Withdrawal",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 13,
-    title: "Migration",
+    title: "Staking pool",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 14,
-    title: "Migration",
+    title: "Review my NFTs",
   },
   {
     src: <BiCheckShield className="card-icon" />,
     id: 15,
-    title: "Migration",
+    title: "Restore tokens",
   },
   {
     src: <BiCheckShield className="card-icon" />,
     id: 16,
-    title: "Migration",
+    title: "Update my portfolio's",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <FaRegMoneyBillAlt className="card-icon" />,
     id: 17,
-    title: "Migration",
+    title: "Purchase Tokens",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 18,
-    title: "Migration",
+    title: "My NFT's",
   },
   {
-    src: <BiCheckShield className="card-icon" />,
+    src: <RiSmartphoneLine className="card-icon" />,
     id: 19,
-    title: "Migration",
-  },
-  {
-    src: <BiCheckShield className="card-icon" />,
-    id: 20,
-    title: "Migration",
+    title: "Other's",
   },
 ];
