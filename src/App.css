@@ -1,1 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root{
+    --primary-color: rgb(26, 28, 50);
+    --secondary-color: rgb(72, 128, 200);
+
+}
+.App{
+    background-image: linear-gradient(to bottom, rgb(7, 8, 21), rgb(13, 14, 39));
+    color: white;
+}

@@ -23,7 +23,9 @@
     padding: .5rem 1rem;
     font-size: 1.3rem;
     border-radius: 10px;
-    border-left: .3rem solid black;
+    border-left: .3rem solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .card-icon{
@@ -44,10 +46,10 @@
     width: 416px;
     height: 192px;
     padding: 15px 20px;
-    background-color: #232323;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 10px;
-    border-left: .5rem solid green;
+    border-left: .5rem solid var(--secondary-color);
 }
 
 .distribution-details{
