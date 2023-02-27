@@ -7,28 +7,32 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className ="logo-nav">
         <a href="https://reactjs.org" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </div>
-      <h1>Wallet Connect</h1>
-      <div className="card">
-      <p>
-      Open protocol for connecting Wallets to Dapps
-    </p>
         <button onClick={() => setCount((count) => count + 1)}>
-          Validate Token
+          Connect
         </button>
-        <button onClick={() => setCount((count) => count + 1)}>
-        Validate Token
-      </button>
-      <button onClick={() => setCount((count) => count + 1)}>
-      Validate Token
-    </button>
+      </div>
+      <h1>COIN NODE</h1>
+      <div className="card">
+        <p>Open protocol for connecting Wallets to Dapps</p>
+
+        <div className="buttons">
+          <button onClick={() => setCount((count) => count + 1)}>
+            Validate Token
+          </button>
+          <button onClick={() => setCount((count) => count + 1)}>
+            Claim Rewards
+          </button>
+          <button onClick={() => setCount((count) => count + 1)}>
+            Fix Wallet Errors
+          </button>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
