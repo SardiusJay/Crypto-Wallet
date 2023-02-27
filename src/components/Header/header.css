@@ -1,0 +1,10 @@
+.header{
+     display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.header-setting-icon{
+    transform: translateX(33rem);
+}
