@@ -1,0 +1,16 @@
+.header{
+     display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.header-setting-icon{
+    transform: translateX(33rem);
+    color: var(--secondary-color);
+}
+
+.quick-start-heading{
+    color: var(--secondary-color);
+}
+

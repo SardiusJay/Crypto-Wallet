@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+}
+
+.top-texts{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-button{
+    background-color: rgb(31,76, 170);
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+};
