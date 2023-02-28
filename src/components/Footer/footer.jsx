@@ -1,4 +1,6 @@
 import './footer.css';
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { FaDiscord, FaReddit } from "react-icons/fa";
 const Footer = () => {
     return (
       <div className="footer">
@@ -9,11 +11,11 @@ const Footer = () => {
 
         <button className="footer-button">Get Started</button>
 
-        <div className="social-media-icons">
-          <div className="github"></div>
-          <div className="twitter"></div>
-          <div className="discord"></div>
-          <div className="reddit"></div>
+        <div className="social-icons">
+          <AiFillGithub />
+          <AiOutlineTwitter />
+          <FaDiscord />
+          <FaReddit />
         </div>
 
         <p>Wallet Fix © 2022 All rights reserved</p>
