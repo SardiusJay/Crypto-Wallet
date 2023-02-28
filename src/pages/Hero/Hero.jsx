@@ -1,6 +1,5 @@
 import { cardInfo } from "../../components/constants";
 import './hero.css';
-import { BiCheckShield } from "react-icons/bi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 const Hero = () => {
      
