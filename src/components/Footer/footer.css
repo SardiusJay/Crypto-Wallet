@@ -24,3 +24,9 @@
     color: white;
     font-size: 1rem;
 };
+
+.social-icons{
+    display: none;
+    flex-direction: row;
+    gap: 2rem;
+}

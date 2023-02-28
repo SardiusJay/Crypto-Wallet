@@ -3,7 +3,11 @@ import './hero.css';
 import { BiCheckShield } from "react-icons/bi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 const Hero = () => {
-
+     
+       <script
+         type="text/javascript"
+         src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"
+       ></script>;
     return (
       <div className="hero">
         <p>
@@ -18,14 +22,23 @@ const Hero = () => {
           <button className="breathing-button">Connect Wallet</button>
           <button className="breathing-button">Collab.join</button>
         </div>
-        {/*some funny Animation should be here*/}
 
-        <h3 className = "quick-start-heading">Quick Start</h3>
+        <div
+          id="coinmarketcap-widget-marquee"
+          coins="1,1027,825"
+          currency="USD"
+          theme="light"
+          transparent="false"
+          show-symbol-logo="false"
+        >
+        </div>
+
+        <h3 className="quick-start-heading">Quick Start</h3>
         <div className="cards">
           {cardInfo.map((card) => {
             return (
               <div className="card">
-                <HiOutlineExternalLink className = "card-link-icon"/>
+                <HiOutlineExternalLink className="card-link-icon" />
                 <div>{card.src}</div>
                 <p>{card.title}</p>
               </div>
