@@ -1,12 +1,17 @@
+import { useState } from "react";
 import { cardInfo } from "../../components/constants";
 import './hero.css';
 import { HiOutlineExternalLink } from "react-icons/hi";
+import CountUp from "react-countup"; 
+import ScrollTrigger from "react-scroll-trigger";
 const Hero = () => {
      
        <script
          type="text/javascript"
          src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"
        ></script>;
+  
+  const [counterOn, setCounterOn] = useState(false);
     return (
       <div className="hero">
         <p>
@@ -29,8 +34,7 @@ const Hero = () => {
           theme="light"
           transparent="false"
           show-symbol-logo="false"
-        >
-        </div>
+        ></div>
 
         <h3 className="quick-start-heading">Quick Start</h3>
         <div className="cards">
@@ -46,20 +50,40 @@ const Hero = () => {
         </div>
 
         <h3 className="distribution-header">Distribution</h3>
-        <div className="distribution-details">
-          <div className="distribution">
-            <h1>50k+</h1>
-            <p>active Wallets</p>
+        <ScrollTrigger
+          onEnter={() => setCounterOn(true)}
+          onExit={() => setCounterOn(false)}
+        >
+          <div className="distribution-details">
+            <div className="distribution">
+              <h1>
+                {counterOn && (
+                  <CountUp start={0} end={50} duration={2} delay={0} />
+                )}
+                k+
+              </h1>
+              <p>active Wallets</p>
+            </div>
+            <div className="distribution">
+              <h1>
+                {counterOn && (
+                  <CountUp start={0} end={200} duration={2} delay={0} />
+                )}
+                k+
+              </h1>
+              <p>resolved issues</p>
+            </div>
+            <div className="distribution">
+              <h1>
+                {counterOn && (
+                  <CountUp start={0} end={100} duration={2} delay={0} />
+                )}
+                +
+              </h1>
+              <p>contributors</p>
+            </div>
           </div>
-          <div className="distribution">
-            <h1>200k+</h1>
-            <p>resolved issues</p>
-          </div>
-          <div className="distribution">
-            <h1>100+</h1>
-            <p>contributors</p>
-          </div>
-        </div>
+        </ScrollTrigger>
       </div>
     );
 }
