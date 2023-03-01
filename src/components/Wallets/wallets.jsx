@@ -1,7 +1,7 @@
 import './wallets.css'
 import { RiSettings5Fill } from 'react-icons/ri';
 
-const wallets = () => {
+const Wallets = () => {
   return (
     <div className="wallet">
     <h1>Connect Wallet</h1>
@@ -13,5 +13,5 @@ const wallets = () => {
   )
 }
 
-export default wallets;
+export default Wallets;
 

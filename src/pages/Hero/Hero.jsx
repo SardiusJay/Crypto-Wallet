@@ -4,6 +4,9 @@ import './hero.css';
 import { HiOutlineExternalLink } from "react-icons/hi";
 import CountUp from "react-countup"; 
 import ScrollTrigger from "react-scroll-trigger";
+import { Link } from "react-router-dom";
+import Footer from "../../components/footer/footer";
+import Header from "../../components/Header/Header";
 const Hero = () => {
      
        <script
@@ -14,6 +17,7 @@ const Hero = () => {
   const [counterOn, setCounterOn] = useState(false);
     return (
       <div className="hero">
+        <Header/>
         <p>
           COIN NODE is an open protocol to communicate securely between Wallets
           and Dapps (Web3 Apps).
@@ -40,11 +44,13 @@ const Hero = () => {
         <div className="cards">
           {cardInfo.map((card) => {
             return (
-              <div className="card">
-                <HiOutlineExternalLink className="card-link-icon" />
-                <div>{card.src}</div>
-                <p>{card.title}</p>
-              </div>
+              <Link to={`./wallets`}>
+                <div className="card">
+                  <HiOutlineExternalLink className="card-link-icon" />
+                  <div>{card.src}</div>
+                  <p>{card.title}</p>
+                </div>
+              </Link>
             );
           })}
         </div>
@@ -84,6 +90,7 @@ const Hero = () => {
             </div>
           </div>
         </ScrollTrigger>
+        <Footer/>
       </div>
     );
 }
