@@ -18,7 +18,7 @@ const Footer = () => {
           <FaReddit />
         </div>
 
-        <p>Wallet Fix © 2022 All rights reserved</p>
+        <p>Wallet Fix © 2023 All rights reserved</p>
       </div>
     );
 }
