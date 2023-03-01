@@ -11,7 +11,7 @@ const Footer = () => {
 
         <button className="footer-button">Get Started</button>
 
-        <div className="social-icons">
+        <div className="socialIcons">
           <AiFillGithub />
           <AiOutlineTwitter />
           <FaDiscord />

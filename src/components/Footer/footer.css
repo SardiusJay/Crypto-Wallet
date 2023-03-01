@@ -8,6 +8,11 @@
     padding-bottom: .5rem;
 }
 
+.socialIcons{
+    display: flex;
+    gap: 2rem;
+}
+
 .top-texts{
     display: flex;
     flex-direction: column;
@@ -25,8 +30,3 @@
     font-size: 1rem;
 };
 
-.social-icons{
-    display: none;
-    flex-direction: row;
-    gap: 2rem;
-}

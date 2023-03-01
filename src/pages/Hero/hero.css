@@ -18,6 +18,7 @@
     gap: 2rem;
 }
 
+
 .breathing-button{
     border: none;
     padding: .5rem 1rem;
@@ -26,6 +27,27 @@
     border-left: .3rem solid var(--secondary-color);
     background-color: var(--primary-color);
     color: white;
+    animation: breath 3s infinite;
+}
+
+@keyframes breath {
+    0% {
+        font-size: 1.3rem;
+        padding: .5rem 1rem;
+        border-left: .3rem solid var(--secondary-color);
+    }
+
+    50% {
+        font-size: 1.35rem;
+        padding: .55rem 1.1rem;
+        border-left: .4rem solid var(--secondary-color);
+    }
+
+    100%{
+         font-size: 1.3rem;
+        padding: .5rem 1rem;
+        border-left: .3rem solid var(--secondary-color);
+    }
 }
 
 .card-icon{
