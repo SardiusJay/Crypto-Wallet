@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path ="/" element ={<Hero/>}/>
-          <Route exact path="/wallets" element={<Wallets />} />
+          <Route  path="/wallets" element={<Wallets />} />
         </Routes>
       </Router>
     </div>

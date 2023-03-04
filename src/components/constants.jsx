@@ -1,6 +1,32 @@
+{
+  /* imports For card on the first page*/
+}
+
 import { BiCheckShield } from "react-icons/bi";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { RiSmartphoneLine } from "react-icons/ri";
+
+{
+  /* imports For images on the Wallet page*/
+}
+
+import {
+  brd,
+  coinbase,
+  Defi,
+  exodus,
+  metamask,
+  phantom,
+  pillar,
+  rainbow,
+  saitama,
+  terra,
+  trust,
+  walletconnect,
+} from "../assets";
+
+{/** Exports for cards in the first page */ }
+
 export const cardInfo = [
   {
     src: <BiCheckShield className="card-icon" />,
@@ -103,3 +129,63 @@ export const cardInfo = [
     title: "Other's",
   },
 ];
+
+{
+  /** Exports for logos in the second page */
+}
+
+const logosArray = [
+  brd,
+  coinbase,
+  saitama,
+  terra,
+  phantom,
+  Defi,
+  exodus,
+  walletconnect,
+  rainbow,
+  metamask,
+  trust,
+  pillar,
+];
+
+const names = [
+  "BRD wallet",
+  "Coinbase",
+  "saitamask wallet",
+  "Terra station",
+  "Phantom wallet",
+  "Cosmos station",
+  "Exodus wallet",
+  "Wallet connect",
+  "Rainbow",
+  "Trust",
+  "Argent",
+  "Metamask",
+  "Binance chain",
+  "Safemoon",
+  "Gnosis Safe",
+  "DeFi",
+  "Pillar",
+  "imToken",
+  "ONTO",
+  "TokenPcket",
+  "Aave",
+  "Digitex",
+  "Ledger",
+  "Portis",
+  "Formatic",
+  "MathWallet",
+];
+  export let logos = [];
+  for (let i = 0; i < logosArray.length; i++) {
+    logos.push({
+      src: logosArray[i],
+      title: names[i],
+    });
+};
+  
+console.log(logos);
+
+
+

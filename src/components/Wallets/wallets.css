@@ -1,7 +1,70 @@
-.wallett {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wallet{
     display: flex;
-    flex-direction: colun;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    gap: 2rem;
+    background-color: white;
+    color: black;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    box-shadow: 5px 4px 5px 2.5px rgba(128,128,128, 0.5);
+}
+
+.header img {
+    height: 40px;
+    width: 40px;
+}
+
+.header-texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-texts h1{
+    font-size: 40px;
+}
+
+
+.wallets{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    gap: 2rem 5rem;
+    margin-top: 1rem;
+}
+
+.wallet-crypto-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 119.33px;
+    height: 141.39px;
+    padding: 6px 12px;
+}
+
+.wallet-crypto-image img{
+    height: 80px;
+    width: 80px;
+}
+
+.wallet-crypto-image p{
+    font-size: 13px;
+    margin: 13px 0 8px;
 }

@@ -74,6 +74,10 @@
     border-left: .5rem solid var(--secondary-color);
 }
 
+.cards a{
+    text-decoration: none;
+}
+
 .card-link-icon{
     transform: translate(195px, -35px);
 }
