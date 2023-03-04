@@ -1,4 +1,4 @@
-import './wallets.css'
+import './wallets.css';
 import { RiSettings5Fill } from 'react-icons/ri';
 import  {logos}  from "../constants";
 import { walletconnect } from '../../assets';
@@ -6,7 +6,7 @@ const Wallets = () => {
   return (
     <div>
       <div className="wallet">
-        <div className="header">
+        <div className="wallet-header">
           <img src={walletconnect} alt ="logo" />
         </div>
         <div className="header-texts">
