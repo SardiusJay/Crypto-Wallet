@@ -9,7 +9,7 @@ const Wallets = () => {
         <div className="wallet-header">
           <img src={walletconnect} alt ="logo" />
         </div>
-        <div className="header-texts">
+        <div className="wallet-header-texts">
           <h1>Connect Wallet</h1>
           <p>Open protocol for connecting Wallets to Dapps</p>
         </div>
