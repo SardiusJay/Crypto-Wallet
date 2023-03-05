@@ -69,3 +69,27 @@
     font-size: 13px;
     margin: 13px 0 8px;
 }
+
+.footer-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+
+}
+
+.footer-text p{
+    font-size: 12px;
+}
+
+.footer-logo{
+    height: 12.5px;
+    width: 12.5px;
+}
+
+a.footer-link{
+    text-decoration: none;
+    color: blue;
+}

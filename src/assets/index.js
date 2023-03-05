@@ -22,6 +22,12 @@ import onto from "./Image/onTo.jpeg";
 import portis from "./Image/portis.webp";
 import top from "./Image/topTP.png";
 import aave from "./Image/aave.png";
+import walleth from "./Image/walleth.jpeg";
+import ledgerLive from "./Image/ledgerLive.avif";
+import formatic from "./Image/formatic.jpeg";
+import bitpay from "./Image/bitpay.jpeg";
+import autherium from "./Image/autherium.jpeg";
+import math from "./Image/math.jpeg";
 
 export {
   brd,
@@ -48,4 +54,10 @@ export {
   portis,
   top,
   aave,
+  walleth,
+  ledgerLive,
+  formatic,
+  bitpay,
+  autherium,
+  math,
 };

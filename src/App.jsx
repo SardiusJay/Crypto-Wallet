@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Hero from './pages/Hero/Hero';
-import Wallets from './components/Wallets/wallets';
+import Wallets from './pages/Wallets/wallets';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
