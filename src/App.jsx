@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Hero from './pages/Hero/Hero';
 import Wallets from './pages/Wallets/wallets';
+import Footer from './components/Footer/footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,8 +12,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path ="/" element ={<Hero/>}/>
-          <Route  path="/wallets" element={<Wallets />} />
+          <Route path="/" element={<Hero />}>
+            <Route path="/" element={<Footer />} />
+          </Route>
+          <Route path="/wallets" element={<Wallets />} />
         </Routes>
       </Router>
     </div>

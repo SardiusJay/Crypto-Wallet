@@ -17,7 +17,7 @@ const Hero = () => {
   const [counterOn, setCounterOn] = useState(false);
     return (
       <div className="hero">
-        <Header/>
+        <Header />
         <p>
           COIN NODE is an open protocol to communicate securely between Wallets
           and Dapps (Web3 Apps).
@@ -27,8 +27,12 @@ const Hero = () => {
         </p>
 
         <div className="breathing-buttons">
-          <button className="breathing-button">Connect Wallet</button>
-          <button className="breathing-button">Collab.join</button>
+          <Link to={`./wallets`}>
+            <button className="breathing-button">Connect Wallet</button>
+          </Link>
+          <Link to={`./wallets`}>
+            <button className="breathing-button">Collab.join</button>
+          </Link>
         </div>
 
         <div
@@ -90,7 +94,7 @@ const Hero = () => {
             </div>
           </div>
         </ScrollTrigger>
-        <Footer/>
+        <Footer />
       </div>
     );
 }

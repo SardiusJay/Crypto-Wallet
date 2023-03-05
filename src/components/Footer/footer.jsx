@@ -1,4 +1,5 @@
 import './footer.css';
+import { Link } from "react-router-dom";
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaDiscord, FaReddit } from "react-icons/fa";
 const Footer = () => {
@@ -9,7 +10,9 @@ const Footer = () => {
           <p>We are here to provide help</p>
         </div>
 
-        <button className="footer-button">Get Started</button>
+        <Link to={`./wallets`}>
+          <button className="footer-button">Get Started</button>
+        </Link>
 
         <div className="socialIcons">
           <AiFillGithub />
