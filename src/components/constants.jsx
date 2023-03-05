@@ -23,6 +23,12 @@ import {
   terra,
   trust,
   walletconnect,
+  cosmos,
+  argent,
+  binance,
+  safemoon,
+  gnosis,
+  imtoken,
 } from "../assets";
 
 {/** Exports for cards in the first page */ }
@@ -140,13 +146,19 @@ const logosArray = [
   saitama,
   terra,
   phantom,
-  Defi,
+  cosmos,
   exodus,
   walletconnect,
   rainbow,
-  metamask,
   trust,
+  argent,
+  metamask,
+  binance,
+  safemoon,
+  gnosis,
+  Defi,
   pillar,
+  imtoken,
 ];
 
 const names = [
