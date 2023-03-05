@@ -16,6 +16,12 @@ import binance from "./Image/binance.png";
 import safemoon from "./Image/lg.avif";
 import gnosis from "./Image/gnosis.avif";
 import imtoken from "./Image/Imtoken.jpeg";
+import Digi from "./Image/digiText.png";
+import ledger from "./Image/ledger.png";
+import onto from "./Image/onTo.jpeg";
+import portis from "./Image/portis.webp";
+import top from "./Image/topTP.png";
+import aave from "./Image/aave.png";
 
 export {
   brd,
@@ -36,4 +42,10 @@ export {
   safemoon,
   gnosis,
   imtoken,
+  Digi,
+  ledger,
+  onto,
+  portis,
+  top,
+  aave,
 };

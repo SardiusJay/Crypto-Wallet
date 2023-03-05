@@ -29,6 +29,12 @@ import {
   safemoon,
   gnosis,
   imtoken,
+  Digi,
+  ledger,
+  onto,
+  portis,
+  top,
+  aave,
 } from "../assets";
 
 {/** Exports for cards in the first page */ }
@@ -159,6 +165,12 @@ const logosArray = [
   Defi,
   pillar,
   imtoken,
+  onto,
+  top,
+  aave,
+  Digi,
+  ledger,
+  portis,
 ];
 
 const names = [
