@@ -12,6 +12,9 @@
     gap: 2rem;
     overflow: hidden;
 }
+.header-texts{
+    text-align: center;
+}
 
 .breathing-buttons{
     display: flex;
