@@ -5,7 +5,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import CountUp from "react-countup"; 
 import ScrollTrigger from "react-scroll-trigger";
 import { Link } from "react-router-dom";
-import Footer from "../../components/footer/footer";
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 const Hero = () => {
      
