@@ -1,0 +1,128 @@
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    transform: translateY(-145%);
+    background: white;
+    border-radius: 10px;
+    z-index: 300;
+     position: fixed;
+     width: 480px;
+     height: 624px;
+     padding: 3rem 2rem 3rem 2rem;
+     color: #6c7574;
+}
+ .image-icon{
+    display: flex;
+    justify-content:flex-start;
+    width: 100%;
+}
+.connect .image-icon img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.connect-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #c3d0cf;
+}
+
+.error-note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 440px;
+    height: 50px;
+    color: #721c24;
+    background-color: #f8d7d4;
+    border-radius: 5px;
+    border: 1px solid #fdc0ba;
+}
+
+textarea{
+    height: 134px;
+    width: 440px;
+    padding: .5rem;
+    border: 1px solid  #c3d0cf;
+    border-radius: 5px;
+    resize: none;
+}
+
+textarea::placeholder{
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+.word-count{
+    font-size: 11px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.proceed-btn{
+    width: 440px;
+    height: 33px;
+    color: white;
+    background-color:#007bff;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+ button.cancel-btn{
+    width: 67.86px;
+    height: 31px;
+    background-color: #d63545;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    cursor: pointer;
+    justify-self: flex-end;
+    transform: translateX(15px);
+}
+
+.pay{
+    font-size: 12px;
+    color: rgb(181, 59, 29);
+    transform: translateX(-10px);
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+.basement{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+
+}
+
+.connect-nav p{
+    padding-bottom: 0.5rem;
+}
+
+.connect-nav p:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.wallet-password{
+    width: 440px;
+    height: 38px;
+    padding: 6px 12px;
+    display: flex; 
+    align-items: center;
+    justify-content:flex-start;
+}
+

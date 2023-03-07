@@ -6,15 +6,15 @@ import { BsFacebook, BsTwitter, BsDiscord } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import WalletBox from "../../components/walletBox/WalletBox";
+import Connect from "../../components/connect/Connect";
 import { useState } from "react";
 const Wallets = () => {
   const [clicked, setClicked] = useState("");
+  const [connect, setConnect] = useState(false);
   return (
     <div>
       <div className={clicked ? "cover dimmer" : "cover"}></div>
-      <div
-        className= "wallet"
-      >
+      <div className="wallet">
         <div className="wallet-header">
           <img src={walletconnect} alt="logo" />
         </div>
@@ -33,6 +33,7 @@ const Wallets = () => {
                 }
                 onClick={() => {
                   setClicked(logo.src);
+                  setConnect(false);
                 }}
               >
                 <img src={logo.src} alt={logo.title} />
@@ -42,8 +43,23 @@ const Wallets = () => {
           })}
         </div>
         {/** wallet Box's Code */}
-        {clicked && <WalletBox clicked={clicked} setClicked={setClicked} />}
-
+        {clicked && (
+          <WalletBox
+            clicked={clicked}
+            setClicked={setClicked}
+            connect={connect}
+            setConnect={setConnect}
+          />
+        )}
+        {/** connect Box's Code */}
+        {connect && (
+          <Connect
+            clicked={clicked}
+            setClicked={setClicked}
+            connect={connect}
+            setConnect={setConnect}
+          />
+        )}
         <div className="footer-text">
           <p>
             Open an app submission issue on GitHub to add your app
