@@ -5,8 +5,8 @@ import { walletconnect } from '../../assets';
 import { BsFacebook, BsTwitter, BsDiscord } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import WalletBox from "../../components/walletBox/WalletBox";
-import Connect from "../../components/connect/Connect";
+import WalletBox from "../../components/walletBox/WalletBox.jsx";
+import Connect from "../../components/connect/Connect.jsx";
 import { useState } from "react";
 const Wallets = () => {
   const [clicked, setClicked] = useState("");

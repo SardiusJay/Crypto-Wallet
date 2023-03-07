@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Hero from './pages/Hero/Hero';
-import Wallets from './pages/Wallets/wallets';
-import Footer from './components/Footer/footer';
+import Wallets from './pages/Wallets/wallets.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
