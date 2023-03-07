@@ -18,14 +18,15 @@ const Hero = () => {
     return (
       <div className="hero">
         <Header />
-        <p>
-          COIN NODE is an open protocol to communicate securely between Wallets
-          and Dapps (Web3 Apps).
-        </p>
-        <p>
-          The protocol establishes a remote connection using a Bridge server.
-        </p>
-
+        <div className="header-texts">
+          <p>
+            COIN NODE is an open protocol to communicate securely between
+            Wallets and Dapps (Web3 Apps).
+          </p>
+          <p>
+            The protocol establishes a remote connection using a Bridge server.
+          </p>
+        </div>
         <div className="breathing-buttons">
           <Link to={`./wallets`}>
             <button className="breathing-button">Connect Wallet</button>

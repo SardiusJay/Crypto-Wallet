@@ -101,13 +101,58 @@ a.footer-link{
 .cover{
    background-color: rgba(82, 82, 82, 0.6);
     display: none;
-    position: absolute;
+    position:fixed;
     width: 100%;
-    min-height: 323vh;
+    min-height: 100%;
     top: 0;
     z-index: 99;
 }
 
 .dimmer{
     display: block
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    .wallet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+    }
+
+    .wallets{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: .5rem .5rem;
+    margin-top: 1rem;
+}
+.wallets img {
+    height: 40px;
+    width: 40px;
+}
+
+.wallet-header-texts h1{
+    font-size: 30px;
+}
+.wallet-header-texts p{
+    font-size: 12px;
+}
+
+.wallet-crypto-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90.8px;
+    height: 101.39px;
+    padding: 6px 12px;
+    font-size: 11px;
+}
+
+.footer-text{
+    padding: 0 1rem; 
+}
+
 }
