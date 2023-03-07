@@ -5,10 +5,16 @@ import { walletconnect } from '../../assets';
 import { BsFacebook, BsTwitter, BsDiscord } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import WalletBox from "../../components/walletBox/WalletBox";
+import { useState } from "react";
 const Wallets = () => {
+  const [clicked, setClicked] = useState("");
   return (
     <div>
-      <div className="wallet">
+      <div className={clicked ? "cover dimmer" : "cover"}></div>
+      <div
+        className= "wallet"
+      >
         <div className="wallet-header">
           <img src={walletconnect} alt="logo" />
         </div>
@@ -19,13 +25,25 @@ const Wallets = () => {
         <div className="wallets">
           {logos.map((logo) => {
             return (
-              <div className="wallet-crypto-image">
+              <div
+                className={
+                  clicked
+                    ? "wallet-crypto-image pointer-event"
+                    : "wallet-crypto-image"
+                }
+                onClick={() => {
+                  setClicked(logo.src);
+                }}
+              >
                 <img src={logo.src} alt={logo.title} />
                 <p>{logo.title}</p>
               </div>
             );
           })}
         </div>
+        {/** wallet Box's Code */}
+        {clicked && <WalletBox clicked={clicked} setClicked={setClicked} />}
+
         <div className="footer-text">
           <p>
             Open an app submission issue on GitHub to add your app
