@@ -63,7 +63,7 @@ import spatium from "./Image/spatium.jpeg";
 import talken from "./Image/talken.jpeg";
 import tokenary from "./Image/tokenary.jpeg";
 import torus from "./Image/torus.jpeg";
-import tron from "./Image/tron.png";
+import tron from "./Image/Tron.png";
 import trustVault from "./Image/trustVault.jpeg";
 import unstoppable from "./Image/unstoppable.jpeg";
 import viaWallet from "./Image/viaWallet.jpeg";
