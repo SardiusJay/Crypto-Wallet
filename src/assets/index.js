@@ -68,7 +68,7 @@ import trustVault from "./Image/trustVault.jpeg";
 import unstoppable from "./Image/unstoppable.jpeg";
 import viaWallet from "./Image/viaWallet.jpeg";
 import vision from "./Image/vision.jpeg";
-import walletio from "./Image/walletio.jpeg";
+import walletio from "./Image/walletIo.jpeg";
 import zelcore from "./Image/ZelCore.jpeg";
 
 export {
