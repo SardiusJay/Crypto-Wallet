@@ -188,6 +188,11 @@ export const cardInfo = [
     id: 19,
     title: "Other's",
   },
+  {
+    src: <FaRegMoneyBillAlt className="card-icon" />,
+    id: 20,
+    title: "Token",
+  },
 ];
 
 {

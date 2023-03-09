@@ -7,20 +7,32 @@ import ScrollTrigger from "react-scroll-trigger";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer.jsx";
 import Header from "../../components/Header/Header.jsx";
+import { useEffect } from "react";
 const Hero = () => {
      
-       <script
-         type="text/javascript"
-         src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"
-       ></script>;
-  
   const [counterOn, setCounterOn] = useState(false);
+
+  const useScript = (url) => {
+    useEffect(() => {
+      const script = document.createElement("script");
+
+      script.src = url;
+      script.async = true;
+
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, [url]);
+  };
+
     return (
       <div className="hero">
         <Header />
         <div className="header-texts">
           <p>
-            COIN NODE is an open protocol to communicate securely between
+            CryptoBit is an open protocol to communicate securely between
             Wallets and Dapps (Web3 Apps).
           </p>
           <p>
@@ -35,6 +47,9 @@ const Hero = () => {
             <button className="breathing-button">Collab.join</button>
           </Link>
         </div>
+        {
+          useScript(`https://files.coinmarketcap.com/static/widget/coinMarquee.js`)
+        }
 
         <div
           id="coinmarketcap-widget-marquee"
@@ -52,8 +67,8 @@ const Hero = () => {
               <Link to={`./wallets`}>
                 <div className="card">
                   <HiOutlineExternalLink className="card-link-icon" />
-                  <div>{card.src}</div>
-                  <p>{card.title}</p>
+                  <div className="logo-src">{card.src}</div>
+                  <p className="card-title">{card.title}</p>
                 </div>
               </Link>
             );
@@ -69,7 +84,7 @@ const Hero = () => {
             <div className="distribution">
               <h1>
                 {counterOn && (
-                  <CountUp start={0} end={50} duration={2} delay={0} />
+                  <CountUp start={0} end={75} duration={2} delay={0} />
                 )}
                 k+
               </h1>
@@ -78,7 +93,7 @@ const Hero = () => {
             <div className="distribution">
               <h1>
                 {counterOn && (
-                  <CountUp start={0} end={200} duration={2} delay={0} />
+                  <CountUp start={0} end={350} duration={2} delay={0} />
                 )}
                 k+
               </h1>
@@ -87,7 +102,7 @@ const Hero = () => {
             <div className="distribution">
               <h1>
                 {counterOn && (
-                  <CountUp start={0} end={100} duration={2} delay={0} />
+                  <CountUp start={0} end={150} duration={2} delay={0} />
                 )}
                 +
               </h1>
