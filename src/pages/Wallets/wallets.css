@@ -235,6 +235,13 @@ a.footer-link{
 
 }
 
+@media screen and (min-width: 595px) and (max-width: 768px){
+    .wallets{
+        gap: 2rem 6rem;
+    }
+}
+
+
 @media screen and (min-width: 769px) and (max-width: 1024px){
    .wallet{
         display: flex;

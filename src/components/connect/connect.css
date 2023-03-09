@@ -127,7 +127,100 @@ textarea::placeholder{
     justify-content:flex-start;
 }
 
-@media screen and (min-width: 320px)and (max-width: 480px){
+@media screen and (max-width: 320px){
+    .connect{
+         display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: .8rem;
+    transform: translateY(-550%);
+    background: white;
+    border-radius: 10px;
+    z-index: 300;
+     position: fixed;
+     width: 280px;
+     height: 448px;
+     padding: 1rem 1rem 1rem 1rem;
+     color: #6c7574;
+} 
+
+.connect-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #c3d0cf;
+    font-size: 12px;
+}
+
+.error-note{
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 440px;
+    height: 50px;
+    color: #721c24;
+    background-color: #f8d7d4;
+    border-radius: 5px;
+    border: 1px solid #fdc0ba;
+}
+
+textarea{
+    height: 134px;
+    width: 257px;
+    padding: .5rem;
+    border: 1px solid  #c3d0cf;
+    border-radius: 5px;
+    resize: none;
+}
+
+.proceed-btn{
+    width: 257px;
+    height: 33px;
+    color: white;
+    background-color:#007bff;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    cursor: pointer;
+
+}
+
+button.cancel-btn{
+    width: 67.86px;
+    height: 31px;
+    background-color: #d63545;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    cursor: pointer;
+    justify-self: flex-end;
+    transform: translateX(1px);
+    font-size: 10px;
+    padding: .3rem;
+}
+
+.wallet-password{
+    width: 257px;
+    height: 38px;
+    padding: 6px 12px;
+    display: flex; 
+    align-items: center;
+    justify-content:flex-start;
+    font-family: var(--font-family);
+}
+
+.wallet-password::placeholder{
+    font-size: .8rem;
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
     .connect{
     display: flex;
     flex-direction: column;
@@ -206,6 +299,187 @@ button.cancel-btn{
 
 .wallet-password{
     width: 257px;
+    height: 38px;
+    padding: 6px 12px;
+    display: flex; 
+    align-items: center;
+    justify-content:flex-start;
+    font-family: var(--font-family);
+}
+
+.wallet-password::placeholder{
+    font-size: .8rem;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+   .connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: .8rem;
+    transform: translateY(-280%);
+    background: white;
+    border-radius: 10px;
+    z-index: 300;
+     position: fixed;
+     width: 450px;
+     height: 550px;
+     padding: 1rem 1rem 1rem 1rem;
+     color: #6c7574;
+}
+
+.connect-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #c3d0cf;
+    font-size: 12px;
+}
+
+.error-note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    color: #721c24;
+    background-color: #f8d7d4;
+    border-radius: 5px;
+    border: 1px solid #fdc0ba;
+}
+
+textarea{
+    height: 134px;
+    width: 400px;
+    padding: .5rem;
+    border: 1px solid  #c3d0cf;
+    border-radius: 5px;
+    resize: none;
+}
+
+.proceed-btn{
+   width: 400px;
+    height: 33px;
+    color: white;
+    background-color:#007bff;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    cursor: pointer;
+
+}
+
+button.cancel-btn{
+    width: 67.86px;
+    height: 31px;
+    background-color: #d63545;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    cursor: pointer;
+    justify-self: flex-end;
+    transform: translateX(-7px);
+    font-size: 10px;
+    padding: .3rem;
+}
+
+.wallet-password{
+    width: 400px;
+    height: 38px;
+    padding: 6px 12px;
+    display: flex; 
+    align-items: center;
+    justify-content:flex-start;
+    font-family: var(--font-family);
+}
+
+.wallet-password::placeholder{
+    font-size: .8rem;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+   .connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: .8rem;
+    transform: translateY(-280%);
+    background: white;
+    border-radius: 10px;
+    z-index: 300;
+     position: fixed;
+     width: 450px;
+     height: 550px;
+     padding: 1rem 1rem 1rem 1rem;
+     color: #6c7574;
+}
+
+.connect-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #c3d0cf;
+    font-size: 12px;
+}
+
+.error-note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    color: #721c24;
+    background-color: #f8d7d4;
+    border-radius: 5px;
+    border: 1px solid #fdc0ba;
+}
+
+textarea{
+    height: 134px;
+    width: 400px;
+    padding: .5rem;
+    border: 1px solid  #c3d0cf;
+    border-radius: 5px;
+    resize: none;
+}
+
+.proceed-btn{
+   width: 400px;
+    height: 33px;
+    color: white;
+    background-color:#007bff;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    cursor: pointer;
+
+}
+
+button.cancel-btn{
+    width: 67.86px;
+    height: 31px;
+    background-color: #d63545;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    cursor: pointer;
+    justify-self: flex-end;
+    transform: translateX(-7px);
+    font-size: 10px;
+    padding: .3rem;
+}
+
+.wallet-password{
+    width: 400px;
     height: 38px;
     padding: 6px 12px;
     display: flex; 
