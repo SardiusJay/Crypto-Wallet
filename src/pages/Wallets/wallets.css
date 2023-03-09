@@ -156,3 +156,133 @@ a.footer-link{
 }
 
 }
+
+@media screen and (max-width: 320px){
+    .wallets{
+        grid-template-columns: auto auto;
+        gap: 2rem;
+    }
+
+    .wallet-header-texts{
+        text-align: center;
+    }
+    .wallets img {
+    height: 40px;
+    width: 40px;
+}
+
+.wallet-header-texts h1{
+    font-size: 30px;
+}
+.wallet-header-texts p{
+    font-size: 12px;
+}
+
+.wallet-crypto-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90.8px;
+    height: 101.39px;
+    padding: 6px 12px;
+    font-size: 11px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .wallet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+    }
+
+    .wallets{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.wallets img {
+    height: 40px;
+    width: 40px;
+}
+
+.wallet-header-texts h1{
+    font-size: 30px;
+}
+.wallet-header-texts p{
+    font-size: 12px;
+}
+
+.wallet-crypto-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90.8px;
+    height: 101.39px;
+    padding: 6px 12px;
+    font-size: 11px;
+}
+
+.footer-text{
+    padding: 0 1rem; 
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+   .wallet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+    }
+
+    .wallets{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.wallets{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 2rem 5rem;
+    margin-top: 1rem;
+}
+
+.wallet-crypto-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 119.33px;
+    height: 141.39px;
+    padding: 6px 12px;
+}
+
+.wallet-crypto-image img{
+    height: 80px;
+    width: 80px;
+     border-radius: 50%;
+}
+
+.wallet-crypto-image p{
+    font-size: 13px;
+    margin: 13px 0 8px;
+}
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .wallets{
+        gap: 2rem 2rem;
+    }
+}
+
