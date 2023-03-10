@@ -32,7 +32,7 @@ const Hero = () => {
        <Header/>
         <div className="header-texts">
           <p>
-            CryptoBit is an open protocol to communicate securely between
+            KryptoBit is an open protocol to communicate securely between
             Wallets and Dapps (Web3 Apps).
           </p>
           <p>
