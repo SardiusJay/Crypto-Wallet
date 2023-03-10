@@ -29,7 +29,7 @@ const Hero = () => {
 
     return (
       <div className="hero">
-       <header/>
+       <Header/>
         <div className="header-texts">
           <p>
             CryptoBit is an open protocol to communicate securely between
