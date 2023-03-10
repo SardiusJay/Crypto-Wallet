@@ -1,9 +1,3 @@
-.heading{
-     display: none;
-    align-items: start;
-    justify-content: center;
-    padding-top: 2rem;
-}
 
 .header-setting-icon{
     transform: translateX(33rem);
@@ -13,6 +7,13 @@
 .quick-start-heading{
     color: var(--secondary-color);
 }
+.heading{
+     display: none;
+    align-items: start;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
 
 @media screen and (min-width: 220px) and (max-width: 480px){
 
