@@ -1,5 +1,5 @@
 .top-name{
-     display: flex;
+     display: none;
     align-items: start;
     justify-content: center;
     padding-top: 2rem;
