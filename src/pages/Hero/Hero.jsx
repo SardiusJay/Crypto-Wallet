@@ -102,7 +102,7 @@ const Hero = () => {
             <div className="distribution">
               <h1>
                 {counterOn && (
-                  <CountUp start={0} end={150} duration={2} delay={0} />
+                  <CountUp start={0} end={200} duration={2} delay={0} />
                 )}
                 +
               </h1>

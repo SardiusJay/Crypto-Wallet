@@ -189,9 +189,9 @@ export const cardInfo = [
     title: "Other's",
   },
   {
-    src: <FaRegMoneyBillAlt className="card-icon" />,
-    id: 20,
-    title: "Token",
+    src: <RiSmartphoneLine className="card-icon" />,
+    id: 19,
+    title: "Complain",
   },
 ];
 
