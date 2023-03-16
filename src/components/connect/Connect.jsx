@@ -98,6 +98,8 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
           className="proceed-btn"
           onClick={() => {
             setPay(true);
+            setClicked("");
+            setConnect(false);
           }}
         >
           PROCEED
