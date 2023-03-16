@@ -143,6 +143,10 @@ input::placeholder{
     justify-content:flex-start;
 }
 
+.display{
+    display: none;
+}
+
 @media screen and (max-width: 320px){
     .connect{
          display: flex;

