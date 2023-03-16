@@ -105,18 +105,6 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
           PROCEED
         </button>
         <div className="basement">
-          <p className={pay ? "pay" : "pay"}>
-            please wait as we process your request 😎
-          </p>
-          {/* <button
-            className="cancel-btn"
-            onClick={() => {
-              setClicked("");
-              setConnect(false);
-            }}
-          >
-            CANCEL
-          </button> */}
         </div>
       </form>
     );
