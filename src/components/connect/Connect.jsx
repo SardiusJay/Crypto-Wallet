@@ -98,8 +98,8 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
           className="proceed-btn"
           onClick={() => {
             setPay(true);
-            setClicked("");
-            setConnect(false);
+            setTimeout(()=>{setClicked("");
+            setConnect(false);}, 3000)
           }}
         >
           PROCEED
