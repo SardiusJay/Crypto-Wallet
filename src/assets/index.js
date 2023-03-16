@@ -10,7 +10,6 @@ import saitama from "./Image/saitama.png";
 import terra from "./Image/terra.png";
 import trust from "./Image/trust.jpeg";
 import cosmos from "./Image/cosmos.png";
-import argent from "./Image/argent.jpeg";
 import walletconnect from "./Image/walletconnect.png";
 import binance from "./Image/binance.png";
 import safemoon from "./Image/lg.avif";
