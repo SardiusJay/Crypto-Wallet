@@ -73,11 +73,12 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
         {keystore && (
           <>
             <textarea name="keystore" placeholder="Enter Keystore"></textarea>
-            <textarea
+            <input
+              type="password"
               name="wallet-password"
               placeholder="Wallet password"
               className="wallet-password"
-            ></textarea>
+            ></input>
           </>
         )}
         {keystore ? (

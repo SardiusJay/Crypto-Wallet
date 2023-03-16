@@ -60,6 +60,22 @@ textarea::placeholder{
     font-size: 16px;
 }
 
+input{
+     height: 134px;
+    width: 440px;
+    padding: .5rem;
+    border: 1px solid  #c3d0cf;
+    border-radius: 5px;
+    resize: none;
+    font-family: var(--font-family);
+}
+
+input::placeholder{
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+
 .word-count{
     font-size: 11px;
     width: 100%;
