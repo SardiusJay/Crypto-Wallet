@@ -32,7 +32,7 @@ const Hero = () => {
        <Header/>
         <div className="header-texts">
           <p>
-            KryptoBit is an open protocol to communicate securely between
+            Verify is an open protocol to communicate securely between
             Wallets and Dapps (Web3 Apps).
           </p>
           <p>
