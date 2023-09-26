@@ -51,10 +51,7 @@ const Connect = ({ clicked, setClicked, setConnect }) => {
             Private Key
           </p>
         </div>
-        <div className="error-note">
-          <p>An unknown error occured, please try again later.</p>
-        </div>
-
+        
         {privated && (
           <textarea
             placeholder="Enter Your Private Key"
