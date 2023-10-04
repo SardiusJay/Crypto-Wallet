@@ -12,7 +12,7 @@ const WalletBox = ({ clicked, setClicked, connect, setConnect }) => {
         </div>
         <div className="box-body">
           <div className="box-body-top">
-            <p>Error Connecting...</p>
+            <p> Connecting...</p>
                       <button className="manual-connect-btn" onClick={() => { setConnect(true); }}>Connect Manually</button>
           </div>
           <div className="box-body-bottom">
